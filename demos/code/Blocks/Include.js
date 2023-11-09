@@ -154,6 +154,25 @@ Blockly.C['include_vector'] = function(block) {
   return code;
 };
 
+Blockly.Blocks['include_stack'] = {
+	init: function() {
+	  this.appendDummyInput()
+		  .appendField("#include <stack>");
+	  this.setPreviousStatement(true, null);
+	  this.setNextStatement(true, null);
+	  this.setColour(includeHUE);
+   this.setTooltip("Use #include <stack> if you are using container type \"stack\".");
+   this.setHelpUrl("");
+	}
+  };
+
+Blockly.C['include_stack'] = function(block) {
+	// TODO: Assemble C into code variable.
+	
+	var code = "#include <stack>\n";
+	return code;
+  };
+
 
 Blockly.Blocks['using_namespace_std'] = {
 	init: function() {
