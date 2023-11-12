@@ -8486,6 +8486,7 @@ Blockly.Block = function(a, b, c) {
 		isVar: false,
 		isArr: false,
 		isVec: false,
+		isSta: false,
 		isFunc: false,
 		isStruct: false,
 		isClass: false
@@ -8495,6 +8496,7 @@ Blockly.Block = function(a, b, c) {
 		this.dataStr.isVar = false;
 		this.dataStr.isArr = false;
 		this.dataStr.isVec = false;
+		this.dataStr.isSta = false;
 		this.dataStr.isFunc = false;
 		this.dataStr.isStruct = false;
 		this.dataStr.isClass = false;
@@ -8528,6 +8530,12 @@ Blockly.Block = function(a, b, c) {
 		    this.setFalse();
 		    if(bool){
 		      this.dataStr.isVec = true;
+		    }
+		  break;
+		  case 'isSta':
+		    this.setFalse();
+		    if(bool){
+		      this.dataStr.isSta = true;
 		    }
 		  break;
 		  case 'isFunc':
@@ -8564,7 +8572,11 @@ Blockly.Block = function(a, b, c) {
 		if(this.dataStr.isVec){
 			return 'isVec';
 		}
-		
+
+		if (this.dataStr.isSta) {
+			return 'isSta';
+		}
+
 		if(this.dataStr.isFunc){
 			return 'isFunc';
 		}
