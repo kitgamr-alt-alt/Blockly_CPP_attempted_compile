@@ -171,7 +171,26 @@ Blockly.C['include_stack'] = function(block) {
 	
 	var code = "#include <stack>\n";
 	return code;
-  };
+};
+
+Blockly.Blocks['include_queue'] = {
+	init: function () {
+		this.appendDummyInput()
+			.appendField("#include <queue>");
+		this.setPreviousStatement(true, null);
+		this.setNextStatement(true, null);
+		this.setColour(includeHUE);
+		this.setTooltip("Use #include <queue> if you are using container type \"queue\".");
+		this.setHelpUrl("");
+	}
+};
+
+Blockly.C['include_queue'] = function (block) {
+	// TODO: Assemble C into code variable.
+
+	var code = "#include <queue>\n";
+	return code;
+};
 
 
 Blockly.Blocks['using_namespace_std'] = {

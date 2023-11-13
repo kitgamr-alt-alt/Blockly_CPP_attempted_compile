@@ -35,6 +35,8 @@
 	<script src="Blocks/Chapter 6 - Vectors.js"></script>
 	<script src="Blocks/Chapter 7 - Classes.js"></script>
 	<script src="Blocks/Stack.js"></script>
+	<script src="Blocks/Chapter_14_-_Queue.js"></script>
+
 
 	<!-- Include block type inputs -->
 	<script src="Blocks/Blocks - Type.js"></script>
@@ -122,6 +124,7 @@
 		  <block type="include_cctype"></block>
 		  <block type="include_vector"></block>
 		  <block type="include_stack"></block>
+		  <block type="include_queue"></block>
 
 		  <block type="using_namespace_std"></block>
 	  </category>
@@ -746,6 +749,60 @@
 			  <block type="stack_pop">
 				  <value name="valinp1">
 					  <block type="get_sta">
+						  <field name="VAR"></field>
+					  </block>
+				  </value>
+			  </block>
+
+			  <block type="stack_top">
+				  <value name="valinp1">
+					  <block type="get_sta">
+						  <field name="VAR"></field>
+					  </block>
+				  </value>
+			  </block>
+
+		  </category>
+		  <category name="Queue" colour="#134796">
+			  <label text="Queue Declaration" web-class="labelVector"></label>
+			  <block type="queue"></block>
+			  <label text="Queue Functions" web-class="labelVector"></label>
+
+			  <block type="queue_size">
+				  <value name="valinp1">
+					  <block type="get_que">
+						  <field name="VAR"></field>
+					  </block>
+				  </value>
+			  </block>
+
+			  <block type="queue_push">
+				  <value name="valinp1">
+					  <block type="get_que">
+						  <field name="VAR"></field>
+					  </block>
+				  </value>
+			  </block>
+
+			  <block type="queue_pop">
+				  <value name="valinp1">
+					  <block type="get_que">
+						  <field name="VAR"></field>
+					  </block>
+				  </value>
+			  </block>
+
+			  <block type="queue_front">
+				  <value name="valinp1">
+					  <block type="get_que">
+						  <field name="VAR"></field>
+					  </block>
+				  </value>
+			  </block>
+
+			  <block type="queue_back">
+				  <value name="valinp1">
+					  <block type="get_que">
 						  <field name="VAR"></field>
 					  </block>
 				  </value>

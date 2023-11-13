@@ -1667,7 +1667,130 @@ Blockly.C['get_sta'] = function (block) {
 	return [code, Blockly.C.ORDER_NONE];
 };
 
+Blockly.Blocks['get_que'] = {
+	init: function () {
 
+		this.paramNames_ = [["", ""]];
+
+		this.appendDummyInput()
+			.appendField(new Blockly.FieldDropdown(this.allocateDropdown.bind(this)), "VAR");
+
+		this.setOutput(true, null);
+		this.setColour(queueHUE);
+		this.setTooltip("");
+		this.setHelpUrl("");
+
+		this.typeName_ = "";
+		this.getVar_ = "";
+
+		this.paramCount_ = 0;
+
+		this.isInitialized_ = false;
+
+		//If this block gets a variable
+		this.isGetter_ = true;
+
+		//this.setMovable(false);
+		//this.setDeletable(false);
+	},
+
+	onchange: function () {
+
+		this.allocateValues();
+		this.allocateVariables();
+		this.allocateWarnings();
+	},
+
+	allocateValues: function () {
+
+		if (this.getFieldValue('VAR') && this.getFieldValue('VAR').length > 0) {
+			this.getVar_ = this.getFieldValue('VAR');
+		}
+		else {
+			this.getVar_ = "";
+		}
+
+	},
+
+	allocateVariables: function () {
+		var options = [];
+
+		options.push(["", ""]);
+
+		//Previous declaration
+
+		let ptr = this.parentBlock_;
+
+		while (ptr) {
+
+			if (this.getVar_ === ptr.getVar_) {
+				this.isInitialized_ = ptr.isInitialized_;
+			}
+
+			switch (ptr.getDataStr()) {
+				case 'isQue':
+
+					(ptr && ptr.getVar_) ? (options.push([ptr.getVar_, ptr.getVar_])) : (0);
+
+					break;
+			}
+
+			ptr = ptr.parentBlock_;
+		}
+		this.paramNames_ = options;
+
+		this.allocateType();
+
+	},
+
+	allocateType: function () {
+		//Set typeName_
+		let ptr = this.parentBlock_;
+		while (ptr) {
+
+			switch (ptr.getDataStr()) {
+				case 'isQue':
+
+					if (this.getVar_ === ptr.getVar_) {
+						this.typeName_ = ptr.typeName_;
+						return;
+					}
+
+					break;
+			}
+
+			ptr = ptr.parentBlock_;
+		}
+	},
+
+	allocateDropdown: function () {
+		return this.paramNames_;
+	},
+
+	allocateWarnings: function () {
+		var TT = "";
+
+		if (!this.parentBlock_) {
+			TT += "Block warning, this block has a return and must be connected.\n";
+		}
+
+		if (this.parentBlock_ == null) {
+			this.setWarningText(TT);
+		}
+		else {
+			this.setWarningText(null);
+		}
+	}
+
+};
+
+Blockly.C['get_que'] = function (block) {
+	var code = '';
+
+	code += this.getVar_;
+
+	return [code, Blockly.C.ORDER_NONE];
+};
 
 
 

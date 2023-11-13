@@ -478,3 +478,87 @@ Blockly.C['stack_pop'] = function (block) {
 
 	return code;
 };
+
+Blockly.Blocks['stack_top'] = {
+	init: function () {
+
+		this.appendValueInput('valinp1')
+			.setCheck(null);
+
+		this.appendDummyInput()
+			.appendField(".top()");
+
+		this.setOutput(true);
+		this.setColour(stackHUE);
+
+		this.setTooltip("");
+		this.setHelpUrl("");
+
+		this.isGetter_ = true;
+	},
+
+	onchange: function () {
+		this.allocateValues();
+		this.allocateWarnings();
+	},
+
+	//Initialize variables
+	allocateValues: function () {
+
+		this.getVar_ = Blockly.C.valueToCode(this, 'valinp1', Blockly.C.ORDER_NONE);
+		this.typeName_ = "";
+		
+		let ptr = this.parentBlock_;
+		
+		while(ptr){
+			
+			if(ptr.getDataStr() === "isSta" && this.getVar_ === ptr.getVar_){
+				this.typeName_ = ptr.typeName_;
+			}
+			
+			ptr = ptr.parentBlock_;
+		}
+	},
+
+	allocateWarnings: function () {
+		var TT = "";
+
+		//If there is no left connection
+		if (!this.parentBlock_) {
+			TT += 'Block Error, this block has a return and must be connected.\n';
+		}
+
+		//If there is a variable
+		if (this.getVar_.length > 0) {
+
+		}
+		//If there is not a variable
+		else {
+			TT += 'Error, a stack variable is required.\n';
+		}
+
+		//Check if this block is in a proper scope
+		let Scope = C_Scope;
+		if (!Scope.node.is_in_scope(this, ['isFunc'])) {
+			TT += "Error, this block must be inside of a function or main.\n";
+		}
+		//End Scope check
+
+		if (TT.length > 0) {
+			this.setWarningText(TT);
+		}
+		else {
+			this.setWarningText(null);
+		}
+	}
+};
+
+Blockly.C['stack_top'] = function (block) {
+	var code = "";
+
+	if (this.getVar_.length > 0) {
+		code += this.getVar_ + ".top()";
+	}
+
+	return [code, Blockly.C.ORDER_ATOMIC];
+};
