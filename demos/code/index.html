@@ -36,6 +36,7 @@
 	<script src="Blocks/Chapter 7 - Classes.js"></script>
 	<script src="Blocks/Stack.js"></script>
 	<script src="Blocks/Chapter_14_-_Queue.js"></script>
+	<script src="Blocks/Deque.js"></script>
 
 
 	<!-- Include block type inputs -->
@@ -125,6 +126,7 @@
 		  <block type="include_vector"></block>
 		  <block type="include_stack"></block>
 		  <block type="include_queue"></block>
+		  <block type="include_deque"></block>
 
 		  <block type="using_namespace_std"></block>
 	  </category>
@@ -807,6 +809,86 @@
 					  </block>
 				  </value>
 			  </block>
+
+		  </category>
+
+		  <category name="Deque" colour="#134796">
+
+			  <label text="Deque Declaration" web-class="labelDeque"></label>
+
+			  <block type="deque"></block>
+
+			  <label text="Deque Functions" web-class="labelDeque"></label>
+
+			  <block type="deque_size">
+				  <value name="valinp1">
+					  <block type="get_deq">
+						  <field name="VAR"></field>
+					  </block>
+				  </value>
+			  </block>
+
+			  <block type="deque_at">
+				  <value name="valinp1">
+					  <block type="get_deq">
+						  <field name="VAR"></field>
+					  </block>
+				  </value>
+				  <value name="valinp2">
+					  <shadow type="get_num">
+						  <field name="NUM"></field>
+					  </shadow>
+				  </value>
+			  </block>
+
+			  <block type="deque_push_back">
+				  <value name="valinp1">
+					  <block type="get_deq">
+						  <field name="VAR"></field>
+					  </block>
+				  </value>
+			  </block>
+
+			  <block type="deque_pop_back">
+				  <value name="valinp1">
+					  <block type="get_deq">
+						  <field name="VAR"></field>
+					  </block>
+				  </value>
+			  </block>
+
+			  <block type="deque_push_front">
+				  <value name="valinp1">
+					  <block type="get_deq">
+						  <field name="VAR"></field>
+					  </block>
+				  </value>
+			  </block>
+
+			  <block type="deque_pop_front">
+				  <value name="valinp1">
+					  <block type="get_deq">
+						  <field name="VAR"></field>
+					  </block>
+				  </value>
+			  </block>
+
+			  <block type="deque_begin">
+				  <value name="valinp1">
+					  <block type="get_deq">
+						  <field name="VAR"></field>
+					  </block>
+				  </value>
+			  </block>
+
+			  <block type="deque_back">
+				  <value name="valinp1">
+					  <block type="get_deq">
+						  <field name="VAR"></field>
+					  </block>
+				  </value>
+			  </block>
+
 
 		  </category>
 	  </category>

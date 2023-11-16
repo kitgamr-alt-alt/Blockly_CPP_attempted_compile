@@ -192,6 +192,25 @@ Blockly.C['include_queue'] = function (block) {
 	return code;
 };
 
+Blockly.Blocks['include_deque'] = {
+	init: function () {
+		this.appendDummyInput()
+			.appendField("#include <deque>");
+		this.setPreviousStatement(true, null);
+		this.setNextStatement(true, null);
+		this.setColour(includeHUE);
+		this.setTooltip("Use #include <deque> if you are using container type \"deque\".");
+		this.setHelpUrl("");
+	}
+};
+
+Blockly.C['include_deque'] = function (block) {
+	// TODO: Assemble C into code variable.
+
+	var code = "#include <deque>\n";
+	return code;
+};
+
 
 Blockly.Blocks['using_namespace_std'] = {
 	init: function() {
