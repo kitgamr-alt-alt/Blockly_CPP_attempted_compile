@@ -320,11 +320,11 @@ Blockly.Blocks['get_var'] = {
 
 				break;
 
-				case 'isClass':
+				//case 'isClass':
 
 
 
-				break;
+				//break;
 			}
 			
 			ptr = ptr.getSurroundParent();

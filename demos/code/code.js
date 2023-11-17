@@ -292,6 +292,10 @@ Code.tabClick = function (clickedName) {
 		document.getElementById('c_text').style.visibility = 'visible';		
     }
     Blockly.svgResize(Code.workspace);
+    //디버거 버튼 클릭
+    if (clickedName == 'debugger') {
+        Code.tabDebuggerClick();
+    }
 };
 
 /**
@@ -658,3 +662,21 @@ function autoInclude(libname, BlockScope, options) {
 		}
 
 }
+//디버거 버튼 클릭
+Code.TABS_ = ['blocks', 'c', 'debugger'];
+Code.tabDebuggerClick = function () {
+    for (var i = 0; i < Code.TABS_.length; i++) {
+        var name = Code.TABS_[i];
+        document.getElementById('content_' + name).style.visibility = 'hidden';
+    }
+
+    Code.selected = 'debugger';
+    document.getElementById('tab_debugger').className = 'tabon';
+
+    var contentDebugger = document.getElementById('content_debugger');
+    contentDebugger.style.visibility = 'visible';
+    contentDebugger.innerHTML = '<iframe src="https://www.programiz.com/cpp-programming/online-compiler/" width="1200" height="800" frameborder="0"></iframe>';
+    //https://www.onlinegdb.com/online_c++_compiler 로 대체 가능
+};
+
+Code.bindClick('tab_debugger', Code.tabDebuggerClick);

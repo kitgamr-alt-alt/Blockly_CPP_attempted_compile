@@ -367,7 +367,6 @@ Blockly.Blocks['vector_size'] = {
 
 		this.setOutput(true);
 		this.setColour(vectorHUE);
-		
 		this.setTooltip("Returns the number of elements in the vector.");
 		this.setHelpUrl("https://www.cplusplus.com/reference/vector/vector/size/");
 		
