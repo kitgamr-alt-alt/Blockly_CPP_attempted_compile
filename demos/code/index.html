@@ -44,51 +44,67 @@
 <body>
   <table width="100%" height="100%">
     <tr>
-      <td>
-        <h1>
-          <span id="title"></span>
-		  <!--<span id = "version">Beta 1.7</span>-->
-        </h1>
-		
-		<p align="left">	
-			<button onclick="downloadCode()">Download C++ Code</button>
-			<!-- button onclick="updateLog(this)">Download C++</button -->
-		</p>
-		
-		<p align="left">	
-			<button onclick = "downloadXML()" title = "Save your work.">Save</button>
-			
-			<input type = "file" onchange = "readFile(this)" title = "Load a blockly save into the program."></input>
-		</p>
-		
-      </td>
+		<td>
+			<h1>
+				<span id="title"></span>
+				<!--<span id = "version">Beta 1.7</span>-->
+			</h1>
+
+			<p align="left">
+				<button onclick="downloadCode()">Download C++ Code</button>
+				<!-- button onclick="updateLog(this)">Download C++</button -->
+			</p>
+
+			<p align="left">
+				<button onclick="test1()" title="Chapter 1 사용 기초문제">test 1</button>
+				<button onclick="test2()" title="Chapter 1 사용 중급문제">test 2</button>
+				<button onclick="test3()" title="Chapter 2 사용 기초문제">test 3</button>
+				<button onclick="test4()" title="Chapter 3 사용 기초문제">test 4</button>
+				<button onclick="test5()" title="Chapter 4 사용 기초문제">test 5</button>
+				<button onclick="test6()" title="Chapter 5 사용 중급문제">test 6</button>
+				<button onclick="test7()" title="Chapter 6 사용 기초문제">test 7</button>
+				<button onclick="test8()" title="Chapter 7 사용 중급문제">test 8</button>
+				<button onclick="test9()" title="Chapter 7 사용 중급문제">test 9</button>
+				<button onclick="test10()" title="Chapter 7 사용 중급문제">test 10</button>
+				<button onclick="test11()" title="Chapter 7 사용 중급문제">test 11</button>
+				<button onclick="test12()" title="Chapter 7 사용 중급문제">test 12</button>
+				<button onclick="test13()" title="Chapter 7 사용 중급문제">test 13</button>
+			</p>
+
+			<p align="left">
+				<button onclick="downloadXML()" title="Save your work.">Save</button>
+
+				<input type="file" onchange="readFile(this)" title="Load a blockly save into the program."></input>
+			</p>
+
+		</td>
       <td class="farSide">
-        <select id="languageMenu"></select>
+        <select id="languageMenu"></select> <!--언어선택메뉴임 code.js파일에 나옴.-->
       </td>
-    </tr>
+    </tr> <!--여기까지가 블록리 제일윗부분 Save버튼 있는구역을 정의한 코드-->
     <tr>
       <td colspan=2>
         <table width="100%">
-          <tr id="tabRow" height="1em">
-            <td id="tab_blocks" class="tabon">...</td>
-            <td id="tab_c" class="taboff">C++</td> <!--Added C++ to the tab-->
-            <td class="tabmin">&nbsp;</td>
-            <td id="tab_xml" class="taboff"></td>
-            <td class="tabmin">&nbsp;</td>
+			<tr id="tabRow" height="1em">
+				<td id="tab_blocks" class="tabon">...</td> <!--blcoks라고 되어있는부분-->
+				<td id="tab_c" class="taboff">C++</td> <!--Added C++ to the tab-->
+				<td class="tabmin">&nbsp;</td>
+				<td id="tab_xml" class="taboff"></td>
+				<td class="tabmin">&nbsp;</td>
 
 
-            <td class="tabmax">
-              <button id="trashButton" class="notext" title="...">
-                <img src='../../media/1x1.gif' class="trash icon21">
-              </button>
-              <button id="linkButton" class="notext" title="...">
-                <img src='../../media/1x1.gif' class="link icon21">
-              </button>
-              <button id="runButton" class="notext primary" title="...">
-                <img src='../../media/1x1.gif' class="run icon21">
-              </button>
-            </td>
-          </tr>
+				<td class="tabmax">
+					<button id="trashButton" class="notext" title="...">
+						<img src='../../media/1x1.gif' class="trash icon21">
+					</button>
+					<button id="linkButton" class="notext" title="...">
+						<img src='../../media/1x1.gif' class="link icon21">
+					</button>
+					<button id="runButton" class="notext primary" title="...">
+						<img src='../../media/1x1.gif' class="run icon21">
+					</button>
+				</td>
+			</tr>
         </table>
       </td>
     </tr>
