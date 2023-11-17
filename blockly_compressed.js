@@ -8486,6 +8486,9 @@ Blockly.Block = function(a, b, c) {
 		isVar: false,
 		isArr: false,
 		isVec: false,
+		isSta: false,
+		isQue: false,
+		isDeq: false,
 		isFunc: false,
 		isStruct: false,
 		isClass: false
@@ -8495,6 +8498,9 @@ Blockly.Block = function(a, b, c) {
 		this.dataStr.isVar = false;
 		this.dataStr.isArr = false;
 		this.dataStr.isVec = false;
+		this.dataStr.isSta = false;
+		this.dataStr.isQue = false;
+		this.dataStr.isDeq = false;
 		this.dataStr.isFunc = false;
 		this.dataStr.isStruct = false;
 		this.dataStr.isClass = false;
@@ -8528,6 +8534,24 @@ Blockly.Block = function(a, b, c) {
 		    this.setFalse();
 		    if(bool){
 		      this.dataStr.isVec = true;
+		    }
+		  break;
+		  case 'isSta':
+		    this.setFalse();
+		    if(bool){
+		      this.dataStr.isSta = true;
+		    }
+				break;
+		  case 'isQue':
+		    this.setFalse();
+		    if(bool){
+		      this.dataStr.isQue = true;
+		    }
+				break;
+		  case 'isDeq':
+		    this.setFalse();
+		    if(bool){
+		      this.dataStr.isDeq = true;
 		    }
 		  break;
 		  case 'isFunc':
@@ -8564,7 +8588,19 @@ Blockly.Block = function(a, b, c) {
 		if(this.dataStr.isVec){
 			return 'isVec';
 		}
-		
+
+		if (this.dataStr.isSta) {
+			return 'isSta';
+		}
+
+		if (this.dataStr.isQue) {
+			return 'isQue';
+		}
+
+		if (this.dataStr.isDeq) {
+			return 'isDeq';
+		}
+
 		if(this.dataStr.isFunc){
 			return 'isFunc';
 		}

@@ -154,6 +154,63 @@ Blockly.C['include_vector'] = function(block) {
   return code;
 };
 
+Blockly.Blocks['include_stack'] = {
+	init: function() {
+	  this.appendDummyInput()
+		  .appendField("#include <stack>");
+	  this.setPreviousStatement(true, null);
+	  this.setNextStatement(true, null);
+	  this.setColour(includeHUE);
+   this.setTooltip("Use #include <stack> if you are using container type \"stack\".");
+   this.setHelpUrl("");
+	}
+  };
+
+Blockly.C['include_stack'] = function(block) {
+	// TODO: Assemble C into code variable.
+	
+	var code = "#include <stack>\n";
+	return code;
+};
+
+Blockly.Blocks['include_queue'] = {
+	init: function () {
+		this.appendDummyInput()
+			.appendField("#include <queue>");
+		this.setPreviousStatement(true, null);
+		this.setNextStatement(true, null);
+		this.setColour(includeHUE);
+		this.setTooltip("Use #include <queue> if you are using container type \"queue\".");
+		this.setHelpUrl("");
+	}
+};
+
+Blockly.C['include_queue'] = function (block) {
+	// TODO: Assemble C into code variable.
+
+	var code = "#include <queue>\n";
+	return code;
+};
+
+Blockly.Blocks['include_deque'] = {
+	init: function () {
+		this.appendDummyInput()
+			.appendField("#include <deque>");
+		this.setPreviousStatement(true, null);
+		this.setNextStatement(true, null);
+		this.setColour(includeHUE);
+		this.setTooltip("Use #include <deque> if you are using container type \"deque\".");
+		this.setHelpUrl("");
+	}
+};
+
+Blockly.C['include_deque'] = function (block) {
+	// TODO: Assemble C into code variable.
+
+	var code = "#include <deque>\n";
+	return code;
+};
+
 
 Blockly.Blocks['using_namespace_std'] = {
 	init: function() {
