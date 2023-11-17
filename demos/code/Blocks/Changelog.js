@@ -19,7 +19,7 @@ function downloadCode() {
 
 function test1() {
     // 이미지 경로를 여기에 입력
-    var imageUrl = "C:/Users/somin/Desktop/OSS/Blockly_CPP/dog1.png";
+    var imageUrl = "C:/users/somin/Desktop/OSS/문제/001.png";
     // 새 창 열기
     var newWindow = window.open('', '_blank');
 
@@ -172,7 +172,7 @@ function test9() {
 
 function test10() {
     // 이미지 경로를 여기에 입력
-    var imageUrl = "C:/Users/somin/Desktop/OSS/Blockly_CPP/dog1.png";
+    var imageUrl = "../../media/001.png";
     // 새 창 열기
     var newWindow = window.open('', '_blank');
 
@@ -181,7 +181,7 @@ function test10() {
 
     // 이미지 속성 설정
     imageElement.src = imageUrl;
-    imageElement.alt = "dog";
+    imageElement.alt = "stack문제";
 
     // 이미지를 새 창에 추가
     newWindow.document.body.appendChild(imageElement);
@@ -189,7 +189,7 @@ function test10() {
 
 function test11() {
     // 이미지 경로를 여기에 입력
-    var imageUrl = "C:/Users/somin/Desktop/OSS/Blockly_CPP/dog1.png";
+    var imageUrl = "../../media/002.png";
     // 새 창 열기
     var newWindow = window.open('', '_blank');
 
@@ -198,7 +198,7 @@ function test11() {
 
     // 이미지 속성 설정
     imageElement.src = imageUrl;
-    imageElement.alt = "dog";
+    imageElement.alt = "queue문제";
 
     // 이미지를 새 창에 추가
     newWindow.document.body.appendChild(imageElement);
@@ -206,7 +206,7 @@ function test11() {
 
 function test12() {
     // 이미지 경로를 여기에 입력
-    var imageUrl = "C:/Users/somin/Desktop/OSS/Blockly_CPP/dog1.png";
+    var imageUrl = "../../media/003.png";
     // 새 창 열기
     var newWindow = window.open('', '_blank');
 
@@ -215,7 +215,7 @@ function test12() {
 
     // 이미지 속성 설정
     imageElement.src = imageUrl;
-    imageElement.alt = "dog";
+    imageElement.alt = "deque문제";
 
     // 이미지를 새 창에 추가
     newWindow.document.body.appendChild(imageElement);
@@ -223,7 +223,7 @@ function test12() {
 
 function test13() {
     // 이미지 경로를 여기에 입력
-    var imageUrl = "C:/Users/somin/Desktop/OSS/Blockly_CPP/dog1.png";
+    var imageUrl = "../../media/004.png";
     // 새 창 열기
     var newWindow = window.open('', '_blank');
 
@@ -232,7 +232,7 @@ function test13() {
 
     // 이미지 속성 설정
     imageElement.src = imageUrl;
-    imageElement.alt = "dog";
+    imageElement.alt = "pointer문제";
 
     // 이미지를 새 창에 추가
     newWindow.document.body.appendChild(imageElement);
