@@ -19,7 +19,7 @@ function downloadCode() {
 
 function test1() {
     // 이미지 경로를 여기에 입력
-    var imageUrl = "C:/users/somin/Desktop/OSS/문제/001.png";
+    var imageUrl = "../../media/005.png";
     // 새 창 열기
     var newWindow = window.open('', '_blank');
 
@@ -28,7 +28,7 @@ function test1() {
 
     // 이미지 속성 설정
     imageElement.src = imageUrl;
-    imageElement.alt = "dog";
+    imageElement.alt = "변수, 입출력 활용 문제";
 
     // 이미지를 새 창에 추가
     newWindow.document.body.appendChild(imageElement);
@@ -36,7 +36,7 @@ function test1() {
 
 function test2() {
     // 이미지 경로를 여기에 입력
-    var imageUrl = "C:/Users/somin/Desktop/OSS/Blockly_CPP/dog1.png";
+    var imageUrl = "../../media/006.png";
     // 새 창 열기
     var newWindow = window.open('', '_blank');
 
@@ -45,7 +45,7 @@ function test2() {
 
     // 이미지 속성 설정
     imageElement.src = imageUrl;
-    imageElement.alt = "dog";
+    imageElement.alt = "문자열 활용 문제";
 
     // 이미지를 새 창에 추가
     newWindow.document.body.appendChild(imageElement);
@@ -53,7 +53,7 @@ function test2() {
 
 function test3() {
     // 이미지 경로를 여기에 입력
-    var imageUrl = "C:/Users/somin/Desktop/OSS/Blockly_CPP/dog1.png";
+    var imageUrl = "../../media/007.png";
     // 새 창 열기
     var newWindow = window.open('', '_blank');
 
@@ -62,7 +62,7 @@ function test3() {
 
     // 이미지 속성 설정
     imageElement.src = imageUrl;
-    imageElement.alt = "dog";
+    imageElement.alt = "if문 활용 문제";
 
     // 이미지를 새 창에 추가
     newWindow.document.body.appendChild(imageElement);
@@ -70,7 +70,7 @@ function test3() {
 
 function test4() {
     // 이미지 경로를 여기에 입력
-    var imageUrl = "C:/Users/somin/Desktop/OSS/Blockly_CPP/dog1.png";
+    var imageUrl = "../../media/008.png";
     // 새 창 열기
     var newWindow = window.open('', '_blank');
 
@@ -79,7 +79,7 @@ function test4() {
 
     // 이미지 속성 설정
     imageElement.src = imageUrl;
-    imageElement.alt = "dog";
+    imageElement.alt = "switch문 활용 문제";
 
     // 이미지를 새 창에 추가
     newWindow.document.body.appendChild(imageElement);
@@ -87,7 +87,7 @@ function test4() {
 
 function test5() {
     // 이미지 경로를 여기에 입력
-    var imageUrl = "C:/Users/somin/Desktop/OSS/Blockly_CPP/dog1.png";
+    var imageUrl = "../../media/009.png";
     // 새 창 열기
     var newWindow = window.open('', '_blank');
 
@@ -96,7 +96,7 @@ function test5() {
 
     // 이미지 속성 설정
     imageElement.src = imageUrl;
-    imageElement.alt = "dog";
+    imageElement.alt = "while, for문 활용 문제";
 
     // 이미지를 새 창에 추가
     newWindow.document.body.appendChild(imageElement);
@@ -104,7 +104,7 @@ function test5() {
 
 function test6() {
     // 이미지 경로를 여기에 입력
-    var imageUrl = "C:/Users/somin/Desktop/OSS/Blockly_CPP/dog1.png";
+    var imageUrl = "../../media/010.png";
     // 새 창 열기
     var newWindow = window.open('', '_blank');
 
@@ -113,7 +113,7 @@ function test6() {
 
     // 이미지 속성 설정
     imageElement.src = imageUrl;
-    imageElement.alt = "dog";
+    imageElement.alt = "함수활용 문제";
 
     // 이미지를 새 창에 추가
     newWindow.document.body.appendChild(imageElement);
@@ -121,7 +121,7 @@ function test6() {
 
 function test7() {
     // 이미지 경로를 여기에 입력
-    var imageUrl = "C:/Users/somin/Desktop/OSS/Blockly_CPP/dog1.png";
+    var imageUrl = "../../media/011.png";
     // 새 창 열기
     var newWindow = window.open('', '_blank');
 
@@ -130,7 +130,7 @@ function test7() {
 
     // 이미지 속성 설정
     imageElement.src = imageUrl;
-    imageElement.alt = "dog";
+    imageElement.alt = "class활용 문제";
 
     // 이미지를 새 창에 추가
     newWindow.document.body.appendChild(imageElement);
@@ -138,7 +138,7 @@ function test7() {
 
 function test8() {
     // 이미지 경로를 여기에 입력
-    var imageUrl = "C:/Users/somin/Desktop/OSS/Blockly_CPP/dog1.png";
+    var imageUrl = "../../media/012.png";
     // 새 창 열기
     var newWindow = window.open('', '_blank');
 
@@ -147,7 +147,7 @@ function test8() {
 
     // 이미지 속성 설정
     imageElement.src = imageUrl;
-    imageElement.alt = "dog";
+    imageElement.alt = "struct활용 문제";
 
     // 이미지를 새 창에 추가
     newWindow.document.body.appendChild(imageElement);
@@ -155,7 +155,7 @@ function test8() {
 
 function test9() {
     // 이미지 경로를 여기에 입력
-    var imageUrl = "C:/Users/somin/Desktop/OSS/Blockly_CPP/dog1.png";
+    var imageUrl = "../../media/013.png";
     // 새 창 열기
     var newWindow = window.open('', '_blank');
 
@@ -164,7 +164,7 @@ function test9() {
 
     // 이미지 속성 설정
     imageElement.src = imageUrl;
-    imageElement.alt = "dog";
+    imageElement.alt = "attay, vector활용 문제";
 
     // 이미지를 새 창에 추가
     newWindow.document.body.appendChild(imageElement);
@@ -181,7 +181,7 @@ function test10() {
 
     // 이미지 속성 설정
     imageElement.src = imageUrl;
-    imageElement.alt = "stack문제";
+    imageElement.alt = "stack활용 문제";
 
     // 이미지를 새 창에 추가
     newWindow.document.body.appendChild(imageElement);
@@ -198,7 +198,7 @@ function test11() {
 
     // 이미지 속성 설정
     imageElement.src = imageUrl;
-    imageElement.alt = "queue문제";
+    imageElement.alt = "queue활용 문제";
 
     // 이미지를 새 창에 추가
     newWindow.document.body.appendChild(imageElement);
@@ -215,7 +215,7 @@ function test12() {
 
     // 이미지 속성 설정
     imageElement.src = imageUrl;
-    imageElement.alt = "deque문제";
+    imageElement.alt = "deque활용 문제";
 
     // 이미지를 새 창에 추가
     newWindow.document.body.appendChild(imageElement);
@@ -232,7 +232,7 @@ function test13() {
 
     // 이미지 속성 설정
     imageElement.src = imageUrl;
-    imageElement.alt = "pointer문제";
+    imageElement.alt = "pointer활용 문제";
 
     // 이미지를 새 창에 추가
     newWindow.document.body.appendChild(imageElement);
