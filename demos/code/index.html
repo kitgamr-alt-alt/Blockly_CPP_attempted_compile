@@ -34,6 +34,7 @@
 	<script src="Blocks/Chapter 6 - Arrays (2D).js"></script>
 	<script src="Blocks/Chapter 6 - Vectors.js"></script>
 	<script src="Blocks/Chapter 7 - Classes.js"></script>
+	<script src="Blocks/Chapter 8 - Pointers.js"></script>
 	<script src="Blocks/Stack.js"></script>
 	<script src="Blocks/Chapter_14_-_Queue.js"></script>
 	<script src="Blocks/Deque.js"></script>
@@ -60,7 +61,7 @@
 			</p>
 
 			<p align="left">
-				<button onclick="test1()" title="Chapter 1 사용 기초문제">test 1</button>
+				<button onclick="test1();readFile(test)" title="Chapter 1 사용 기초문제">test 1</button>
 				<button onclick="test2()" title="Chapter 1 사용 중급문제">test 2</button>
 				<button onclick="test3()" title="Chapter 2 사용 기초문제">test 3</button>
 				<button onclick="test4()" title="Chapter 3 사용 기초문제">test 4</button>
@@ -597,6 +598,17 @@
 
 
 	  <!-- end of Class blocks -->
+	  <category name="Pointer" colour="#134796">
+
+		  <block type="pointer_null"></block>
+		  <block type="pointer_nullptr"></block>
+		  <block type="pointer_ref"></block>
+		  <block type="pointer_conv"></block>
+
+	  </category>
+
+
+	  <!-- end of Pointer blocks -->
 	  <category name="Data structure" colour="#134796">
 
 		  <category name="Arrays" colour="#134796">
@@ -605,7 +617,8 @@
 
 			  <block type="array_1D">
 				  <value name="valinp0">
-					  <shadow type="get_num"><q>1qqq</q>
+					  <shadow type="get_num">
+						  <q>1qqq</q>
 						  <field name="NUM">1</field>
 					  </shadow>
 				  </value>
