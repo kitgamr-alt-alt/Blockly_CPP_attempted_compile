@@ -6,6 +6,12 @@ You can access the original project through the link below.
 Or check out the project I forked.
 - https://github.com/Chris-Archive/Blockly_CPP
 
+## Project purpose ##
+
+- A block editor allows you to visually check the c++ language and learn with reduced grammatical errors.
+- It allows users to see that when coded into blocks, it translates into real c++ code and learn it.
+- Use the example questions to try and debug coding using the functionality of the c++ language.
+
 ## changes ##
 
 - blockly_compressed.js
@@ -19,8 +25,9 @@ Or check out the project I forked.
 ## Added features ##
 1. Test buttons and examples
 - An example using the functions added by Team 17 and the functions in the existing Blockly C++ was added.
-- Press the button shown in tests 1 through 13 to show an example.
+- Press the button and you'll see an example where you can try out the features written there.
 - You can check the tooltip to see what examples the number contains.
+
 2. New blocks
 - Class
 - Queue
