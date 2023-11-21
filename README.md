@@ -1,21 +1,31 @@
 # Blockly C++ #
 
-This project was created around the time I got my Associates Degree. It was mainly intended as a visual aid for students learning C++ as their first programming language. 
-The project development lasted from November 2019, to August 2020. Some updates were made until mid November 2020.
+This project has modified by three student at Kwangwoon University.
 
-To see my specific development, go to demos->code, mainly in code/Blocks, code/js, and code/index.html.
+You can access the original project through the link below.
+Or check out the project I forked.
+- https://github.com/Chris-Archive/Blockly_CPP
 
-## Library changes ##
-In Blockly C++, two core files have been edited.
+## changes ##
 
-- core/block.js
-- core/field_dropdown.js
+- blockly_compressed.js
+- demos/code.js
+- demos/index.html
+- demos/Blocks/Blocks - Type.js
+- demos/Blocks/Changelog.js
+- demos/Blocks/Chapter 7 - Classes.js
+- demos/Blocks/Include.js
+
 ## Added features ##
 1. Test buttons and examples
 - An example using the functions added by Team 17 and the functions in the existing Blockly C++ was added.
 - Press the button shown in tests 1 through 13 to show an example.
 - You can check the tooltip to see what examples the number contains.
-2. 
+2. New blocks
+- Class
+- Queue
+- Deque
+- Stack
 
 ## How to use Blockly C++ ##
 Blockly C++ can be used locally by going to demos/code and opening "index.html" with a browser.
