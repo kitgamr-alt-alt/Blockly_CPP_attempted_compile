@@ -12,6 +12,8 @@ Or check out the project I forked.
 - It allows users to see that when coded into blocks, it translates into real c++ code and learn it.
 - Use the example questions to try and debug coding using the functionality of the c++ language.
 
+<img src="../../media/example.png" width="450px" height="450px" title="px(픽셀) 크기 설정" alt="example"></img><br/>
+
 ## changes ##
 
 - blockly_compressed.js
@@ -34,5 +36,13 @@ Or check out the project I forked.
 - Deque
 - Stack
 
+3. Debugging capabilities
+- Click on the debugger button to go to the site where you can debug and test the code you created.
+	[click here to try the site](https://www.programiz.com/cpp-programming/online-compiler/)
+
 ## How to use Blockly C++ ##
 Blockly C++ can be used locally by going to demos/code and opening "index.html" with a browser.
+
+## What the user should know ##
+The problem with execution errors is that they are forced to transfer to c++ code in the original blockly development environment
+ (following grammar such as javascript and python).
