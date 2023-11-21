@@ -21,7 +21,7 @@ function test1() {
     // 이미지 경로를 여기에 입력
     var imageUrl = "../../media/005.png";
     // 새 창 열기
-    var newWindow = window.open('', '_blank');
+    var newWindow = window.open('', 'Example using I/O');
 
     // 이미지 요소 생성
     var imageElement = document.createElement("img");
@@ -38,7 +38,7 @@ function test2() {
     // 이미지 경로를 여기에 입력
     var imageUrl = "../../media/006.png";
     // 새 창 열기
-    var newWindow = window.open('', '_blank');
+    var newWindow = window.open('', 'Example using string');
 
     // 이미지 요소 생성
     var imageElement = document.createElement("img");
@@ -55,7 +55,7 @@ function test3() {
     // 이미지 경로를 여기에 입력
     var imageUrl = "../../media/007.png";
     // 새 창 열기
-    var newWindow = window.open('', '_blank');
+    var newWindow = window.open('', 'Example using if');
 
     // 이미지 요소 생성
     var imageElement = document.createElement("img");
@@ -72,7 +72,7 @@ function test4() {
     // 이미지 경로를 여기에 입력
     var imageUrl = "../../media/008.png";
     // 새 창 열기
-    var newWindow = window.open('', '_blank');
+    var newWindow = window.open('', 'Example using switch');
 
     // 이미지 요소 생성
     var imageElement = document.createElement("img");
@@ -89,7 +89,7 @@ function test5() {
     // 이미지 경로를 여기에 입력
     var imageUrl = "../../media/009.png";
     // 새 창 열기
-    var newWindow = window.open('', '_blank');
+    var newWindow = window.open('', 'Example using while/for');
 
     // 이미지 요소 생성
     var imageElement = document.createElement("img");
@@ -106,7 +106,7 @@ function test6() {
     // 이미지 경로를 여기에 입력
     var imageUrl = "../../media/010.png";
     // 새 창 열기
-    var newWindow = window.open('', '_blank');
+    var newWindow = window.open('', 'Example using function');
 
     // 이미지 요소 생성
     var imageElement = document.createElement("img");
@@ -123,7 +123,7 @@ function test7() {
     // 이미지 경로를 여기에 입력
     var imageUrl = "../../media/011.png";
     // 새 창 열기
-    var newWindow = window.open('', '_blank');
+    var newWindow = window.open('', 'Example using class');
 
     // 이미지 요소 생성
     var imageElement = document.createElement("img");
@@ -140,7 +140,7 @@ function test8() {
     // 이미지 경로를 여기에 입력
     var imageUrl = "../../media/012.png";
     // 새 창 열기
-    var newWindow = window.open('', '_blank');
+    var newWindow = window.open('', 'Example using struct');
 
     // 이미지 요소 생성
     var imageElement = document.createElement("img");
@@ -157,7 +157,7 @@ function test9() {
     // 이미지 경로를 여기에 입력
     var imageUrl = "../../media/013.png";
     // 새 창 열기
-    var newWindow = window.open('', '_blank');
+    var newWindow = window.open('', 'Example using array, vector');
 
     // 이미지 요소 생성
     var imageElement = document.createElement("img");
@@ -174,7 +174,7 @@ function test10() {
     // 이미지 경로를 여기에 입력
     var imageUrl = "../../media/001.png";
     // 새 창 열기
-    var newWindow = window.open('', '_blank');
+    var newWindow = window.open('', 'Example using stack');
 
     // 이미지 요소 생성
     var imageElement = document.createElement("img");
@@ -191,7 +191,7 @@ function test11() {
     // 이미지 경로를 여기에 입력
     var imageUrl = "../../media/002.png";
     // 새 창 열기
-    var newWindow = window.open('', '_blank');
+    var newWindow = window.open('', 'Example using queue');
 
     // 이미지 요소 생성
     var imageElement = document.createElement("img");
@@ -208,7 +208,7 @@ function test12() {
     // 이미지 경로를 여기에 입력
     var imageUrl = "../../media/003.png";
     // 새 창 열기
-    var newWindow = window.open('', '_blank');
+    var newWindow = window.open('', 'Example using deque');
 
     // 이미지 요소 생성
     var imageElement = document.createElement("img");
@@ -225,7 +225,7 @@ function test13() {
     // 이미지 경로를 여기에 입력
     var imageUrl = "../../media/004.png";
     // 새 창 열기
-    var newWindow = window.open('', '_blank');
+    var newWindow = window.open('', 'Example using pointer');
 
     // 이미지 요소 생성
     var imageElement = document.createElement("img");

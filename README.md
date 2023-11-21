@@ -12,7 +12,7 @@ Or check out the project I forked.
 - It allows users to see that when coded into blocks, it translates into real c++ code and learn it.
 - Use the example questions to try and debug coding using the functionality of the c++ language.
 
-<img src="../../media/example.png" width="450px" height="450px" title="px(픽셀) 크기 설정" alt="example"></img><br/>
+![example](./example.png)
 
 ## changes ##
 
