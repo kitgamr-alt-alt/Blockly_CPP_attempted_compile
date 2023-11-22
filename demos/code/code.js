@@ -662,8 +662,11 @@ function autoInclude(libname, BlockScope, options) {
 		}
 
 }
+//라이선스 문제로 인하여 임시 비활성화 해둔 상태입니다. 라이센스 답변이 오면 그 후 비활성화 처리를 해제하겠습니다.
+//그것과 별개로 개발에 참고하셨으면 좋겠습니다.
+
 //디버거 버튼 클릭
-Code.TABS_ = ['blocks', 'c', 'debugger'];
+/*Code.TABS_ = ['blocks', 'c', 'debugger'];
 Code.tabDebuggerClick = function () {
     for (var i = 0; i < Code.TABS_.length; i++) {
         var name = Code.TABS_[i];
@@ -679,4 +682,4 @@ Code.tabDebuggerClick = function () {
     //https://www.onlinegdb.com/online_c++_compiler 로 대체 가능
 };
 
-Code.bindClick('tab_debugger', Code.tabDebuggerClick);
+Code.bindClick('tab_debugger', Code.tabDebuggerClick);*/
