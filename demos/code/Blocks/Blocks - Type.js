@@ -826,12 +826,17 @@ Blockly.Blocks['get_func'] = {
 	
 	allocateConstructors: function(block){
 		var options = [];
-		options.push(["" ,""]);
-		options.push([block.oldDS_, block.oldDS_]);
+		options.push(["", ""]);
+
+		//Stream the function and parameter 
+		this.classConProp_ = block.classConProp_;
+		this.classConParam_ = block.classConParam_;
+
+		for (var i = 0; i < block.classConProp_.length; ++i) {
+			options.push([block.classConProp_[i][3], block.classConProp_[i][3]]);
+		}
 		
 		this.isConstructor_ = true;
-		
-		this.classConParam_ = block.classConParam_;
 		
 		this.paramNames_ = options;
 	},

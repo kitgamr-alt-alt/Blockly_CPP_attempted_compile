@@ -411,6 +411,75 @@ Blockly.C['ds_member'] = function (block) {
 	return [code, Blockly.C.ORDER_NONE];
 };
 
+Blockly.Blocks['ds_member2'] = {
+	init: function () {
+
+		this.paramNames_ = [["", ""]];
+
+		this.appendValueInput("valinp1").setCheck(null);
+
+		this.setInputsInline(false);
+		this.setPreviousStatement(true);
+		this.setNextStatement(true);
+		this.setColour(classHue);
+		this.setTooltip("");
+		this.setHelpUrl("");
+
+		this.classVar_ = [];
+		this.classArr_ = [];
+		this.classVec_ = [];
+		this.classFuncProp_ = [];
+		this.classFuncParam_ = [];
+
+		this.isGetter_ = true;
+	},
+
+	onchange: function () {
+		this.allocateBlock();
+		this.allocateWarnings();
+	},
+
+	allocateBlock: function () {
+		let block = this.getInputTargetBlock('valinp1');
+
+		if (block) {
+			block.setColour(this.getColour());
+			block.setMovable(false);
+			block.setDeletable(false);
+		}
+	},
+
+	allocateWarnings: function () {
+		var TT = "";
+
+		let block = this.getInputTargetBlock('valinp1');
+
+		if (block) {
+			if (block.typeName_ !== "void") {
+				TT += 'Warning, non-void function return is ignored.\n';
+			}
+		}
+
+		if (TT.length > 0) {
+			this.setWarningText(TT);
+		}
+		else {
+			this.setWarningText(null);
+		}
+	}
+
+};
+
+Blockly.C['ds_member2'] = function (block) {
+	var val1 = Blockly.C.valueToCode(block, 'valinp1', Blockly.C.ORDER_ATOMIC);
+
+	var code = "";
+
+	code += val1 + ';\n';
+
+	return code;
+};
+
 Blockly.Blocks['ds_class'] = {
 	init: function () {
 		this.appendDummyInput()
