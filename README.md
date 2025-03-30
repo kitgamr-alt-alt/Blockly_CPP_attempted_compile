@@ -1,6 +1,14 @@
-# Blockly C++ #
+# NOTE FROM KITGAMR #
 
-[click here to try the thing](./demos/code/index.html)
+I do NOT know C or C++. I'm only compiling the site for use.
+
+Unless I <sub><sup>somehow</sup></sub> learn how to maintain this project by finishing the C and C++ parts of the project, this ain't being worked on. 
+
+Sorry!
+
+[Here's the code editor.](./demos/code/index.html)
+
+# Blockly C++ #
 
 This project has modified by three student at Kwangwoon University.
 
