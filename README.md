@@ -1,5 +1,7 @@
 # Blockly C++ #
 
+[click here to try the thing](./demos/code/index.html)
+
 This project has modified by three student at Kwangwoon University.
 
 You can access the original project through the link below.
