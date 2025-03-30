@@ -1,14 +1,14 @@
 # NOTE FROM KITGAMR #
 
-I do NOT know (alot of) html, js, C or C++. I'm only compiling the site for use.
+I do NOT know (alot of) html, js, C or C++. I'm only compiling the site for use.*
 
-Unless I <sub><sup>somehow</sup></sub> learn how to maintain this project by finishing the C and C++ parts of the project, this ain't being worked on. 
+Unless I <sub><sup>somehow</sup></sub> learn how to maintain this project by finishing the C and C++ parts of the project, this ain't being worked on.*
 
 Sorry!
 
-[Here's the code editor.](./demos/code/index.html)
+[Here's the code editor,](./demos/code/index.html) and [Here's the original respitory I forked.](https://github.com/GRJeon/Blockly_CPP)
 
-<sub><sup>If I learn to add more functions, then I'm aiming for 3DS homebrew support.</sup></sub>
+* I've been adding things like "int main" arguments, custom code, and other small things. I don't know if I'll expand from here, but I've been making a bit of progress.
 
 # Blockly C++ #
 
