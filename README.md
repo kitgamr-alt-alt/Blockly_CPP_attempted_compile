@@ -8,6 +8,8 @@ Sorry!
 
 [Here's the code editor.](./demos/code/index.html)
 
+<sub><sup>If I learn to add more functions, then I'm aiming for 3DS homebrew support.</sup></sub>
+
 # Blockly C++ #
 
 This project has modified by three student at Kwangwoon University.
