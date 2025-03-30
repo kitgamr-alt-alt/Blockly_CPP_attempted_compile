@@ -46,7 +46,10 @@ Blockly.C['pointer_null'] = function(block) {
 
 Blockly.Blocks['main'] = {
 	init: function() {
-		this.appendDummyInput().appendField('int main()');
+		this.appendDummyInput()
+			.appendField("int main(")
+        		.appendField(new Blockly.FieldTextInput(""), "arg")
+        		.appendField(")");
 		this.appendStatementInput("NAME").setCheck(null);
 		this.setPreviousStatement(true, null);
 		this.setNextStatement(true, null);
@@ -137,7 +140,9 @@ Blockly.Blocks['main'] = {
 
 Blockly.C['main'] = function(block) {	
 	
-	var code = 'int main(){\n';
+	var code = "";
+	
+	code += "int main (" + block.getFieldValue('arg') + ')\n';
 	
 	code += Blockly.C.statementToCode(block, 'NAME');
 	
