@@ -150,7 +150,26 @@ Blockly.C['main'] = function(block) {
 	
 };
 
+Blockly.Blocks['custom_code'] = {
+  init: function() {
+    this.appendDummyInput()
+        .appendField("Custom code:")
+        .appendField(new Blockly.FieldTextInput(""), "CODE");
+    this.setPreviousStatement(true, null);
+    this.setNextStatement(true, null);
+    this.setColour(0);
+ this.setTooltip("");
+ this.setHelpUrl("");
+  }
+};
 
+Blockly.C['custom_code'] = function(block){
+	var code = "";
+
+	code += block.getFieldValue('CODE') + '\n';
+
+	return code;
+};
 
 //Shifts a code for a line, allows for user to format code
 Blockly.Blocks['format_newLine'] = {
