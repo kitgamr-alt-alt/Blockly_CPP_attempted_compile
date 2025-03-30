@@ -19,6 +19,28 @@ Blockly.C['include_iostream'] = function(block) {
   return code;
 };
 
+Blockly.Blocks['include_custom'] = {
+  init: function() {
+    this.appendDummyInput()
+        .appendField("#include <")
+        .appendField(new Blockly.FieldTextInput("3ds"), "lib")
+        .appendField(">");
+    this.setPreviousStatement(true, null);
+    this.setNextStatement(true, null);
+    this.setColour(includeHUE);
+    this.setTooltip("Use this for other functions.");
+    this.setHelpUrl("");
+  }
+};
+
+Blockly.C['include_custom'] = function(block){
+	var code = "";
+
+	code += "#include <" + block.getFieldValue('lib') + '>\n';
+
+	return code;
+};
+
 Blockly.Blocks['include_iomanip'] = {
 	init: function() {
 		this.appendDummyInput()
