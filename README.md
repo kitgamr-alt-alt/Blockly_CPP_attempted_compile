@@ -1,6 +1,6 @@
 # NOTE FROM KITGAMR #
 
-I do NOT know C or C++. I'm only compiling the site for use.
+I do NOT know (alot of) html, js, C or C++. I'm only compiling the site for use.
 
 Unless I <sub><sup>somehow</sup></sub> learn how to maintain this project by finishing the C and C++ parts of the project, this ain't being worked on. 
 
